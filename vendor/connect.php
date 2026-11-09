@@ -1,3 +1,3 @@
 <?php
-echo "Привет, мир!";
+    $connect = mysqli_connect("localhost", "root", "", "CapasitorsDB");
 ?>
