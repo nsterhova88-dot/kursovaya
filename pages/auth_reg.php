@@ -1,7 +1,7 @@
 <?php
     session_start();
     if(isset($_SESSION['login'])){
-        header("Location: /pages/news_page.php");
+        header("Location: ../index.php");
     }
 ?>
 <!DOCTYPE html>
