@@ -16,7 +16,7 @@
             <a href="pages/zakaz.php"><img src="img/zakaz.png" alt="icon3"></a>
             <a href="pages/cart.php"><img src="img/cart.png" alt="icon4"></a>
         </nav>
-        <a href="pages/auth_reg.php" class="a_btn1_log">ВОЙТИ</a>
+        <a href="pages/auth.php" class="a_btn1_log">ВОЙТИ</a>
     </header>
     <main>
         <section class="banner" id="banner">
@@ -62,7 +62,7 @@
     <footer>
         <a href="pages/reg.php" class="a_btn1">Зарегистрироваться</a>
         <p>ИЛИ</p>
-        <a href="pages/auth_reg.php" class="a_btn2">Войти</a>
+        <a href="pages/auth.php" class="a_btn2">Войти</a>
     </footer>
 </body>
 </html>
