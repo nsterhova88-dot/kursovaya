@@ -1,0 +1,106 @@
+
+.registration, .avtorisation{
+    padding: 10vh 5vw 10vh 5vw;
+    width: 33vw;
+    display: flex;
+    flex-direction: column;
+}
+.avtorisation{
+    height: 40vh;
+}
+
+.registrationForm, .avtorisationForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    margin: 2vh 0 2vh 0;
+}
+
+.avtorisationForm{
+    height: 25vh;
+}
+
+.registrationForm{
+    height: 80vh;
+}
+
+.login_reg, .email_reg, .password_reg,
+.conf_pass_reg, .login_avto, .password_avto{
+    height: 5vh;
+    border: none;
+    font-size: 2vh;
+}
+
+.login_reg:focus, .email_reg:focus, .password_reg:focus,
+.conf_pass_reg:focus, .login_avto:focus, .password_avto:focus{
+    outline: none;
+}
+
+.line{
+    height: 0.1vh;
+    background-color: var(--another-blue);
+    margin-top: -1vh;
+}
+
+.sogl{
+    display: flex;
+    margin: 1vh 0 1vh 0;
+    font-size: 2vh;
+}
+
+.checkbox{
+    display: flex;
+    justify-content: center;
+    height: 2.5vh;
+    width: 2.5vh;
+    background-color: var(--bg-light);
+    border: 0.2vh solid var(--bg-dark);
+    margin-right: 1vw;
+    cursor: pointer;
+}
+
+.active_checkbox{
+    opacity: 0;
+}
+
+.agree{
+    display: flex;
+    justify-content: center;
+    background-color: var(--another-blue1);
+    cursor: pointer;
+    width: 2.5vh;
+    height: 2.5vh;
+    color: var(--white);
+}
+
+button{
+    cursor: pointer;
+}
+
+.submit{
+    height: 5vh;
+    width: 11vw;
+    border: none;
+    border-radius: 1vh;
+    background-color: var(--another-blue1);
+    color: var(--white);
+    font-size: 1.5vh;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.btn-change{
+    width: 22vw;
+    display: flex;
+    justify-content: end;
+}
+
+.change{
+    background-color: var(--bg-light);
+    border: none;
+    color: var(--prime-color2);
+    font-size: 1.8vh;
+    justify-content: end;
+    transform: translateY(-8vh);
+}
