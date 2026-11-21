@@ -57,6 +57,7 @@
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut quam eius iusto officia? Consectetur, ad eos blanditiis cupiditate earum ut aperiam in repellat a voluptates impedit unde pariatur. Odio, quae?</p>
                 </div>
             </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nihil eos ratione? Quo dolores porro praesentium commodi at suscipit hic voluptas ipsa. Dignissimos veritatis, corrupti sequi nemo quos quas placeat.</p>
         </section>
     </main>
     <footer>
