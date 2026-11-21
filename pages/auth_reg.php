@@ -14,11 +14,19 @@
     <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
+    <header>
+        <h2>АО Элеконд</h2>
+        <nav>
+            <a href="index.php"><img src="../img/home.png" alt="icon1"></a>
+            <a href="pages/catalog.php"><img src="../img/catalog.png" alt="icon2"></a>
+            <a href="pages/zakaz.php"><img src="../img/zakaz.png" alt="icon3"></a>
+            <a href="pages/cart.php"><img src="../img/cart.png" alt="icon4"></a>
+        </nav>
+    </header>
     <main>
-        <div class="img"></div>
-        <div class="registration">
+        <div class="reg" id="reg">
             <h1>Регистрация</h1>
-            <form action="vendor/registration.php" method="POST" class="registrationForm">
+            <form action="../vendor/reg.php" method="POST" class="regForm">
                 <input type="login" name="login_reg" class="login_reg" placeholder="Логин">
                 <div class="line"></div>
 
@@ -30,6 +38,7 @@
 
                 <input type="password" name="conf_pass_reg" class="conf_pass_reg" placeholder="Подтверждение пароля">
                 <div class="line"></div>
+
                 <div class="sogl">
                     <div class="checkbox" active="false">
                         <div class="active_checkbox">
@@ -38,13 +47,16 @@
                     </div>
                     Я согласен с условиями ресурса
                 </div>
+
                 <button class="submit" type="submit" onclick="create()">ЗАРЕГИСТРИРОВАТЬСЯ</button>
             </form>
             <div class="btn-change"><button class="change" onclick="changeA()" number="1">АВТОРИЗАЦИЯ</button></div>
         </div>
-        <div class="avtorisation">
+
+
+        <div class="auth" id="auth">
             <h1 style="margin-bottom: 3vh;">Авторизация</h1>
-            <form action="vendor/avtorizaition.php" method="POST" class="avtorisationForm">
+            <form action="../vendor/auth.php" method="POST" class="authForm">
                 <input type="login_avto" name="login_avto" class="login_avto" placeholder="Логин">
                 <div class="line"></div>
 
@@ -55,6 +67,6 @@
             <div class="btn-change"><button class="change" onclick="changeR()" number="2">РЕГИСТРАЦИЯ</button></div>
         </div>
     </main>
-    <script src="script/script.js"></script>
+    <script src="../script/change_auth_reg.js"></script>
 </body>
 </html>

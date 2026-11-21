@@ -50,6 +50,31 @@
     box-shadow: var(--shadow);
 }
 
+h1{
+    font-size: 40px;
+    color: var(--text-light);
+    font-weight: 700;
+}
+h2{
+    font-size: 34px;
+    font-weight: 600;
+}
+h3{
+    font-size: 28px;
+    font-weight: 500;
+}
+h4{
+    font-size: 22px;
+    font-weight: 400;
+}
+p{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
+/*====================== ОФОРМЛЕНИЕ СТРАНИЦ =====================*/
+
 header{
     height: 60px;
     width: 100%;
@@ -75,6 +100,33 @@ nav{
     flex-direction: row;
     justify-content: space-between;
 }
+
+.burger{
+    display: none;
+}
+
+ul{
+    background-color: var(--bg-light);
+    padding: 20px 10px;
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+nav a, header ul a{
+    border-radius: var(--border-radius);
+    text-align: center;
+    min-width: fit-content;
+    padding: 3px 8px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+nav a:hover, header ul a:hover{
+    background-color: var(--another-blue1);
+}
+
 
 main{
     height: auto;

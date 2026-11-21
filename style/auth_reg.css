@@ -1,15 +1,15 @@
 
-.registration, .avtorisation{
+.reg, .auth{
     padding: 10vh 5vw 10vh 5vw;
     width: 33vw;
     display: flex;
     flex-direction: column;
 }
-.avtorisation{
+.auth{
     height: 40vh;
 }
 
-.registrationForm, .avtorisationForm{
+.regForm, .authForm{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -17,11 +17,11 @@
     margin: 2vh 0 2vh 0;
 }
 
-.avtorisationForm{
+.authForm{
     height: 25vh;
 }
 
-.registrationForm{
+.regForm{
     height: 80vh;
 }
 

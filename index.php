@@ -16,6 +16,17 @@
             <a href="pages/zakaz.php"><img src="img/zakaz.png" alt="icon3"></a>
             <a href="pages/cart.php"><img src="img/cart.png" alt="icon4"></a>
         </nav>
+        <div class="burger">
+            <button class="burger_btn">
+                <img src="img/burger_icon.png" alt="Кнопка бургер-меню">
+            </button>
+            <ul>
+                <a href="index.php"><img src="img/home.png" alt="icon1"></a>
+                <a href="pages/catalog.php"><img src="img/catalog.png" alt="icon2"></a>
+                <a href="pages/zakaz.php"><img src="img/zakaz.png" alt="icon3"></a>
+                <a href="pages/cart.php"><img src="img/cart.png" alt="icon4"></a>
+            </ul>
+        </div>
         <a href="pages/auth.php" class="a_btn1_log">ВОЙТИ</a>
     </header>
     <main>
@@ -36,28 +47,27 @@
         <section class="last_sob" id="last_sob">
             <h2>Последние события</h2>
             <div class="last_sob_blocks">
-                <div class="blocks_block">
+                <div class="blocks_block" id="blocks_block1">
                     <img src="img/index_block_img" alt="Событие1">
                     <h3>Событие1</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut quam eius iusto officia? Consectetur, ad eos blanditiis cupiditate earum ut aperiam in repellat a voluptates impedit unde pariatur. Odio, quae?</p>
                 </div>
-                <div class="blocks_block">
+                <div class="blocks_block" id="blocks_block2">
                     <img src="img/index_block_img" alt="Событие1">
                     <h3>Событие1</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut quam eius iusto officia? Consectetur, ad eos blanditiis cupiditate earum ut aperiam in repellat a voluptates impedit unde pariatur. Odio, quae?</p>
                 </div>
-                <div class="blocks_block">
+                <div class="blocks_block" id="blocks_block3">
                     <img src="img/index_block_img" alt="Событие1">
                     <h3>Событие1</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut quam eius iusto officia? Consectetur, ad eos blanditiis cupiditate earum ut aperiam in repellat a voluptates impedit unde pariatur. Odio, quae?</p>
                 </div>
-                <div class="blocks_block">
+                <div class="blocks_block"  id="blocks_block4">
                     <img src="img/index_block_img" alt="Событие1">
                     <h3>Событие1</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut quam eius iusto officia? Consectetur, ad eos blanditiis cupiditate earum ut aperiam in repellat a voluptates impedit unde pariatur. Odio, quae?</p>
                 </div>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nihil eos ratione? Quo dolores porro praesentium commodi at suscipit hic voluptas ipsa. Dignissimos veritatis, corrupti sequi nemo quos quas placeat.</p>
         </section>
     </main>
     <footer>
