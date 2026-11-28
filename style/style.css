@@ -87,7 +87,7 @@ header{
     box-shadow: var(--shadow);
 }
 
-header img{
+.nav_icon{
     height: 30px;
     width: fit-content;
     margin-top: 3px;

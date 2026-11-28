@@ -13,13 +13,13 @@ $login = $_POST['login'];
 $pass = $_POST['password'];
 
 
-$stmt = $conn->prepare("SELECT id_user, password, role FROM users WHERE login = ?");
+$stmt = $connect->prepare("SELECT id_user, password, role FROM users WHERE login = ?");
 $stmt->bind_param('s', $login);
 $stmt->execute();
 $res = $stmt->get_result()->fetch_assoc();
 
 if ($res && password_verify($pass, $res['password'])) {
-    $_SESSION['id'] = $res['id']; 
+    $_SESSION['id_user'] = $res['id_user']; 
     $_SESSION['role'] = $res['role'];
     header('Location: ../index.php'); 
     exit();

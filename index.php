@@ -1,6 +1,5 @@
 <?php
     session_start();
-    require_once('vendor/connect.php');
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -15,10 +14,10 @@
     <header>
         <h2>АО Элеконд</h2>
         <nav>
-            <a href="index.php"><img src="img/home.png" alt="icon1"></a>
-            <a href="pages/catalog.php"><img src="img/catalog.png" alt="icon2"></a>
-            <a href="pages/zakaz.php"><img src="img/zakaz.png" alt="icon3"></a>
-            <a href="pages/cart.php"><img src="img/cart.png" alt="icon4"></a>
+            <a href="index.php"><img src="img/home.png" alt="icon1" class="nav_icon"></a>
+            <a href="pages/catalog.php"><img src="img/catalog.png" alt="icon2" class="nav_icon"></a>
+            <a href="pages/zakaz.php"><img src="img/zakaz.png" alt="icon3" class="nav_icon"></a>
+            <a href="pages/cart.php"><img src="img/cart.png" alt="icon4" class="nav_icon"></a>
         </nav>
         <div class="burger">
             <button class="burger_btn">
@@ -31,7 +30,14 @@
                 <a href="pages/cart.php"><img src="img/cart.png" alt="icon4"></a>
             </ul>
         </div>
-        <a href="pages/auth.php" class="a_btn1_log">ВОЙТИ</a>
+        <?php
+            if(!isset($_SESSION['login'])){
+                echo '<a href="pages/auth_reg.php" class="a_btn1_log">ВОЙТИ</a>';
+            }else{
+                echo $_SESSION['login'];
+                echo '<a href="pages/profile.php"><img src="img/profile.png" alt="Профиль" class="nav_icon"></a>';
+            }
+        ?>
     </header>
     <main>
         <section class="banner" id="banner">
