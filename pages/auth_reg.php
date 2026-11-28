@@ -19,8 +19,7 @@
         <nav>
             <a href="index.php"><img src="../img/home.png" alt="icon1"></a>
             <a href="pages/catalog.php"><img src="../img/catalog.png" alt="icon2"></a>
-            <a href="pages/zakaz.php"><img src="../img/zakaz.png" alt="icon3"></a>
-            <a href="pages/cart.php"><img src="../img/cart.png" alt="icon4"></a>
+            <a href="pages/profile.php"><img src="../img/profile.png" alt="icon3"></a>
         </nav>
     </header>
     <main>
@@ -51,6 +50,12 @@
                 <button class="submit" type="submit" onclick="create()">ЗАРЕГИСТРИРОВАТЬСЯ</button>
             </form>
             <div class="btn-change"><button class="change" onclick="changeA()" number="1">АВТОРИЗАЦИЯ</button></div>
+            <?php 
+                if(isset($_SESSION['message'])){
+                    echo '<p class="msg">' . $_SESSION['message'] . '</p>';
+                } 
+                unset($_SESSION['message']);
+            ?>
         </div>
 
 
@@ -65,6 +70,12 @@
                 <button class="submit" type="submit" onclick="sign()">ВОЙТИ</button>
             </form>
             <div class="btn-change"><button class="change" onclick="changeR()" number="2">РЕГИСТРАЦИЯ</button></div>
+            <?php 
+            if(isset($_SESSION['message'])){
+                echo '<p class="msg">' . $_SESSION['message'] . '</p>';
+            } 
+            unset($_SESSION['message']);
+        ?>
         </div>
     </main>
     <script src="../script/change_auth_reg.js"></script>

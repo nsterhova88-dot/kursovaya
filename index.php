@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    require_once('vendor/connect.php');
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
